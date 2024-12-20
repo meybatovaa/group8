@@ -9,5 +9,9 @@ Work from `/scratch_tmp/grp/msc_appbio/DCDM_group8/`. Contains all data and meta
 ## QC using SOP
 QC was conducted using the `IMPC_SOP.csv` file and results were stored in `outputs/qc_results.csv`. Checked for missing values and tested whether values were between the specified min and max values for each parameter. No missing values were found and only 1049 files contained p-values above the specified max and thus failed.
 
+See `perform_qc.R` and `perform_qc.sh` files.
+
 ## Merging data
 Data files were merged into one data frame and stored as `outputs/merged_data.csv`. Files which failed the QC were not added to the data frame.
+
+See `merge_data.R` and `merge_data.sh` files.
