@@ -62,5 +62,5 @@ Parameters in `parameter_descriptions` ers were assigned into predefined groups 
 
 A foreign key constraint was added between `parameter_descriptions` and `parameter_groups`, to allow relational mapping of parameters to their groups.
 
-##Dump file
+## Dump file
 The database dump, containing all the structures and tables for the IMPC database was generated ans stored on HPC.
