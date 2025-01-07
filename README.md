@@ -33,3 +33,34 @@ Missing values (`NA`) are only present in `IMPC_parameter_description.csv` and `
 
 ## Databases
 Databases can now be constructed using the collated data file (`outputs/merged_data.csv`) and the collated metadata files (`metadata/IMPC_parameter_description.csv`, `metadata/IMPC_procedure.csv`, and `metadata/Disease_information.csv`).
+
+## Schema design
+The database schema was created as `impc_db`, comprising five key tables:
+
+- `parameter_descriptions`: Stores phenotyping parameter details.  
+- `procedure_descriptions`: Documents testing procedures.  
+- `disease_associations`: Links genes and diseases with phenodigm scores.  
+- `phenotype_analysis`: Holds experimental results, including p-values.  
+- `parameter_groups`: Categories for organizing related phenotype test parameters
+
+Primary and foreign keys were implemented to establish relationships between tables, ensuring data consistency and integrity.
+
+## Data import
+Data from CSV files were loaded into the tables. Fields were mapped, and constraints such as foreign key relationships were adhered to for accurate data integration.
+
+## Parameter Grouping 
+Parameters in `parameter_descriptions` ers were assigned into predefined groups based on their features:
+
+-Weight: Parameters involving body and organ weights.
+-Images: Parameters from imaging techniques.
+-Brain: Parameters focused on brain functions and structures.
+-Morphology: Parameters concerning anatomical features.
+-Eye: Parameters related to the eye and vision.
+-Blood: Parameters on hematology and composition.
+-Housing: Parameters reflecting animal housing conditions.
+-Conditions: Parameters tied to experimental contexts and cues.
+
+A foreign key constraint was added between `parameter_descriptions` and `parameter_groups`, to allow relational mapping of parameters to their groups.
+
+##Dump file
+The database dump, containing all the structures and tables for the IMPC database was generated ans stored on HPC.
