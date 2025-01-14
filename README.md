@@ -35,6 +35,9 @@ Work from `/scratch_tmp/grp/msc_appbio/DCDM_group8/` with the following subdirec
 5. `data_cleaning.R` - Run on RStudio from the CREATE HPC
    - Further standardise fields in the merged phenotype analysis data
    - Outputs `merged_data_clean.csv`
+6. `database_script.sql` and `database8_dump.sql` - Run on MySQL
+   - Generate MySQL database either using original script or the dump backup file
+   - Outputs `database8` MySQL database
 
 ## QC using SOP
 QC was conducted using the `IMPC_SOP.csv` file and results were stored in `outputs/qc_results.csv`. Checked for missing values and tested whether values were between the specified min and max values for each parameter. No missing values were found and only 1049 files contained p-values above the specified max and thus failed.
