@@ -25,7 +25,7 @@ Work from `/scratch_tmp/grp/msc_appbio/DCDM_group8/` with the following subdirec
 2. `merge_data.R` and `merge_data.sh` - Run R script through shell script as a batch job on the CREATE HPC
    - Merge passed phenotype analysis data files into one data frame
    - Outputs `output/merged_data.csv`
-3. collate_metadata.R` - Run on RStudio from the CREATE HPC
+3. `collate_metadata.R` - Run on RStudio from the CREATE HPC
    - Read in additional data files into `.csv` files
    - Outputs `metadata/{file_name}.csv` for each `metadata/{file_name}.txt`
 4. `missing_values.R` - Run on RStudio from the CREATE HPC
