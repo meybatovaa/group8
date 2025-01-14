@@ -7,7 +7,8 @@ Retrieved the `Group8.zip` file from CREATE HPC at `/scratch_tmp/grp/msc_appbio/
 - `IMPC_SOP.csv` : Standard operating procedure for IMPC phenotype analysis data
 - `IMPC_parameter_description.txt` : Description of parameters belonging to each phenotype analysis
 - `IMPC_procedure.txt` : Description of procedures used for each parameter
-- `Disease_information.txt` : PhenoDigm scores for human disease to mouse phenotype association 
+- `Disease_information.txt` : PhenoDigm scores for human disease to mouse phenotype association
+- `query_genes.csv` : List of the genotypes the collaborator would like to query from the database
 
 ## Working Directory
 Work from `/scratch_tmp/grp/msc_appbio/DCDM_group8/` with the following subdirectories:
