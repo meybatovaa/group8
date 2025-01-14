@@ -1,6 +1,6 @@
 -- Create the database 
-CREATE SCHEMA IF NOT EXISTS impc_db;
-USE impc_db;
+CREATE SCHEMA IF NOT EXISTS database8;
+USE database8;
 
 -- Drop existing tables 
 DROP TABLE IF EXISTS procedure_descriptions;
