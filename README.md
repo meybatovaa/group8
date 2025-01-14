@@ -84,14 +84,14 @@ Data from CSV files were loaded into the tables. Fields were mapped, and constra
 ## Parameter Grouping 
 Parameters in `parameter_descriptions` ers were assigned into predefined groups based on their features:
 
--Weight: Parameters involving body and organ weights.
--Images: Parameters from imaging techniques.
--Brain: Parameters focused on brain functions and structures.
--Morphology: Parameters concerning anatomical features.
--Eye: Parameters related to the eye and vision.
--Blood: Parameters on hematology and composition.
--Housing: Parameters reflecting animal housing conditions.
--Conditions: Parameters tied to experimental contexts and cues.
+- Weight: Parameters involving body and organ weights.
+- Images: Parameters from imaging techniques.
+- Brain: Parameters focused on brain functions and structures.
+- Morphology: Parameters concerning anatomical features.
+- Eye: Parameters related to the eye and vision.
+- Blood: Parameters on hematology and composition.
+- Housing: Parameters reflecting animal housing conditions.
+- Conditions: Parameters tied to experimental contexts and cues.
 
 A foreign key constraint was added between `parameter_descriptions` and `parameter_groups`, to allow relational mapping of parameters to their groups.
 
